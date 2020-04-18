@@ -71,6 +71,21 @@ p {
   border: 2px solid black;
 }
 
+
+/* Germain added CSS*/
+#tooltip1{
+  position:absolute;
+  right:500px;
+  top:500px;
+  width:500px;
+  height:500px;
+  background-color: #50C7C7;
+  display:none;
+}
+
+.toolTipClose{
+  float:right;
+}
 /* footer{
   background-color: black;
   color: white;
@@ -449,12 +464,15 @@ img{
 
 
 }
+
 .vertical{
 
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  z-index: 2;
 }
+
 
 .projects{
   display: block;
@@ -569,6 +587,17 @@ img{
 
 
                     }
+
+
+/* Additional Style Added for testing*/
+.popover1{
+  grid-column: 1/2;
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index:3;
+}
+
 img:hover {
   background-color: grey;
 }
@@ -641,6 +670,8 @@ nav{
   color: "white";
 
 }
+
+
 
 @media only screen and (min-width: 600px) {
   /* body{

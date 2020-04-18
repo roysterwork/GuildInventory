@@ -74,16 +74,17 @@
 
     <!-- <img src="images/render.png" alt="logo" id="render"/> -->
     <img src="images2/talk.png" alt="logo" id="flyer"/>
-    <img src="images2/instagramwhite.png" alt="logo" id="brochure"/>
+    <img src="images2/instagramwhite.png" alt="logo" id="brochure" class="insta"/>
     <img src="images2/facebookwhite.png" alt="logo" id="wireframe"/>
 
     <img src="images2/Gmail.png" alt="logo" id="code"/>
+    
     <img src="images2/Squarespace_Logo.png" alt="logo" id="website" class="rotate"/>
     <img src="images2/Vertical.png" alt="logo" class="vertical"/>
     <img src="images2/Vertical.png" alt="logo" class="vertical"/>
     <img src="images2/Vertical.png" alt="logo" class="vertical"/>
     <img src="images2/Vertical.png" alt="logo" class="vertical"/>
-    <img src="images2/Vertical.png" alt="logo" class="vertical"/>
+    <img src="images2/Vertical.png" alt="logo" />
 
     <!-- <img src="images/PublicationCrop.png" alt="logo" id="publication"/>
 
@@ -94,7 +95,9 @@
   <br>
   <br>
   <br>
-
+ <div id="tooltip1">
+    <button id = "toolTip1Close"class="toolTipClose">Close</button>
+ </div>
 
 
 
@@ -104,5 +107,25 @@
     <footer class=foot>
       <p> &copy; The Guild Poetry, Inc. 2020</p>
     </footer>
+
+    <script src="libraries/jquery-video-lightning-master/"></script>
 </body>
 </html>
+
+
+<script>
+
+  const instaPic =  document.querySelector('.insta');
+  const toolTipClose = document.querySelector('#toolTip1Close');
+  const instaToolTip = document.querySelector('#tooltip1');
+  instaPic.addEventListener('mouseover',(event)=>{
+    instaToolTip.style.display = "block"; //shows the frame
+    console.log(event);
+    
+})
+
+toolTipClose.addEventListener('click',(event) => {
+  instaToolTip.style.display = "none"; //hides the frame
+})
+
+</script>
