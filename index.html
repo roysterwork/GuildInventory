@@ -95,8 +95,12 @@
   <br>
   <br>
   <br>
+  <!--> The div for the actual tool tip, this contaoins the url to the youtube video-->
  <div id="tooltip1">
+   <!-- Consider configuring  your embedded youtube video-->
     <button id = "toolTip1Close"class="toolTipClose">Close</button>
+    <div class="video-frame" style="position: absolute; top: 50%; left: 50%; background: #000000; width: 640px; height: 390px; margin-top: -195px; margin-left: -320px; box-shadow: 0px 0px 50px 10px #F1D6F5;"><div class="video"><div id="close_kyrkj7m2maotwkfu" class="video-close" style="float: right; margin-right: -34px; box-shadow: 0px 0px 50px 10px #F1D6F5; background: #000000; color: #ffffff; border: none; box-sizing: border-box; padding: 0 10px 0 12px; font-size: 25px;">×</div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TZE6YRDPpc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div></div>
  </div>
 
 
@@ -108,11 +112,12 @@
       <p> &copy; The Guild Poetry, Inc. 2020</p>
     </footer>
 
+    <!-- Import of video lightning library, found in the libraries folder-->
     <script src="libraries/jquery-video-lightning-master/"></script>
 </body>
 </html>
 
-
+<!-- javascript tool tip-->
 <script>
 
   const instaPic =  document.querySelector('.insta');

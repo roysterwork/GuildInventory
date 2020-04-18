@@ -72,10 +72,12 @@ p {
 }
 
 
-/* Germain added CSS*/
+/* Germain added CSS , #tooltip1 and .tooltipclose*/
+
+/* this css object sets the location ,size, and background of tooltip 1 which show on hovering over instagram picture*/
 #tooltip1{
   position:absolute;
-  right:500px;
+  right:300px;
   top:500px;
   width:500px;
   height:500px;
@@ -83,6 +85,7 @@ p {
   display:none;
 }
 
+/* moves the location of the close button to the left side of the div*/
 .toolTipClose{
   float:right;
 }
