@@ -81,7 +81,6 @@ p {
   top:500px;
   width:500px;
   height:500px;
-  background-color: #50C7C7;
   display:none;
 }
 
@@ -574,73 +573,15 @@ img{
 
         }
 
-#sketch{
-                    grid-column: 2/3;
-                    width: 33%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-#resume{
-                        grid-column: 3/4;
-                        width: 33%;
-                        margin-left: auto;
-                        margin-right: auto;
-
-
-
-                    }
-
-
-/* Additional Style Added for testing*/
-.popover1{
-  grid-column: 1/2;
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  z-index:3;
-}
-
 img:hover {
   background-color: grey;
 }
 
-/* #nike{
-            grid-column: 1/2;
-
-
-
-        }
-
-#nikeText{
-  grid-column: 2/3;
-} */
 
 
 nav{
   color: "blue";
   /* color: "red"; */
-}
-
-
-#sketching{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-
-
-}
-
-#design{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-
-
 }
 
 #render{
@@ -652,28 +593,12 @@ nav{
 
 
 }
-/* .grid-container {
-  display: grid;
-} */
 
 .foot{
     width: 100%;
     text-align: center;
       /* grid-row: 3/4; */
 }
-#design{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-}
-
-.page{
-  color: "white";
-
-}
-
 
 
 @media only screen and (min-width: 600px) {
@@ -689,9 +614,8 @@ nav{
        /* flex-direction:row-reverse; */
        width: 100%;
 
-
-
   }
+}
 
   @media only screen and (min-width: 1000px) {
     /* body{
@@ -704,76 +628,5 @@ nav{
     nav{ display: flex;
          justify-content: space-between;
        /* flex-direction: column-reverse; */
-
-
-
-
     }
-
-  /* .container{
-
-    display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100%;
-        justify-content: center;
-        grid-row-gap: 50px;
-        justify-content: space-between;
-      } */
-
-
-
-  }
-
-
-/*
-/* #laptop1{
-  grid-column: 2/3; */
-  /* The 1/-1 means you want this element to span the entire width */
-  /* grid-row: 3/4; */
-  /*Your code here
-
-} */
-
-/* #flyer{
-  grid-column: 1/2;
-  width: 33%;
-} */
-/* #brochure{
-  grid-column: 2/3;
-  width: 33%;
 }
-#wireframe{
-  grid-column: 3/3;
-  width: 33%;
-}
-#render{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-} */
-
-/* #handout{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-} */
-
-/* #flyer{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-} */
-
-/* #website{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-} */

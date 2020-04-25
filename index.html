@@ -7,55 +7,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
     <title>Will Royster - Home</title>
-    <!-- <style>
-      div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
-        }
-
-      div.gallery:hover {
-        border: 1px solid #777;
-        color: grey;
-        hover : coral;
-        }
-
-    div.gallery img {
-      width: 100%;
-      height: auto;
-      }
-
-    div.desc {
-      padding: 15px;
-      text-align: center;
-      }
-  </style> -->
 </head>
 <body>
     <img src="images2/GuildBanner.jpg" alt="logo" id="Banner" >
     <div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
 
-      <!-- <nav>
-
-            <br>
-
-
-
-
-        <ul class="nav-links">
-          <li class="page"><a href="index.html">About</a></li>
-          <li class="nav-item"><a href="ux.html">Methedology</a></li>
-          <li class="nav-item"><a href="datavis.html">Projects</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
-
-        </ul>
-    </nav> -->
     <div class="about" id="skip"></div>
     <br>
 
-
-    <!-- <h1>About </h1> -->
       <p>Welcome to the event inquiry process organizer. The graphic below outlines our entire inquiry process visually. The steps of the process occur vertically from top to bottom. By hovering over the icon for each step you can view a recording of how to complete the step and by clicking the icon you are directed to the appropriate document(s). </p>
 
 
@@ -67,9 +26,6 @@
     <br>
     <br>
     <div class="container">
-
-
-
 
 
     <!-- <img src="images/render.png" alt="logo" id="render"/> -->
@@ -89,17 +45,16 @@
     <!-- <img src="images/PublicationCrop.png" alt="logo" id="publication"/>
 
     <img src="images/LogoCrop.png" alt="logo" id="logo"/>
-    <img src="images/SketchCrop.png" alt="logo" id="sketch"/>
-    <img src="images/ResumeCrop.png" alt="logo" id="resume"/> -->
+    <img src="images/SketchCrop.png" alt="logo" id="sketch"/> -->
   </div>
   <br>
   <br>
   <br>
+
   <!--> The div for the actual tool tip, this contaoins the url to the youtube video-->
  <div id="tooltip1">
    <!-- Consider configuring  your embedded youtube video-->
-    <button id = "toolTip1Close"class="toolTipClose">Close</button>
-    <div class="video-frame" style="position: absolute; top: 50%; left: 50%; background: #000000; width: 640px; height: 390px; margin-top: -195px; margin-left: -320px; box-shadow: 0px 0px 50px 10px #F1D6F5;"><div class="video"><div id="close_kyrkj7m2maotwkfu" class="video-close" style="float: right; margin-right: -34px; box-shadow: 0px 0px 50px 10px #F1D6F5; background: #000000; color: #ffffff; border: none; box-sizing: border-box; padding: 0 10px 0 12px; font-size: 25px;">×</div>
+    <div class="video-frame" style="position: absolute; top: 50%; left: 50%; background: #000000; width: 640px; height: 390px; margin-top: -195px; margin-left: -320px; box-shadow: 0px 0px 50px 10px #F1D6F5;"><div class="video"><div id="close_x_popup" class="video-close" style="float: right; margin-right: -34px; box-shadow: 0px 0px 50px 10px #F1D6F5; background: #000000; color: #ffffff; border: none; box-sizing: border-box; padding: 0 10px 0 12px; font-size: 25px;">×</div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/TZE6YRDPpc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div></div>
  </div>
 
@@ -120,16 +75,16 @@
 <!-- javascript tool tip-->
 <script>
 
-  const instaPic =  document.querySelector('.insta');
-  const toolTipClose = document.querySelector('#toolTip1Close');
-  const instaToolTip = document.querySelector('#tooltip1');
-  instaPic.addEventListener('mouseover',(event)=>{
+  const instaPic =  document.querySelector('.insta'); //get a handle to instagram picture by class
+  const toolTipClose = document.querySelector('#close_x_popup'); //get a handle to the tooltip close button by id
+  const instaToolTip = document.querySelector('#tooltip1');  //get a handle to the tooltip by id
+  instaPic.addEventListener('mouseover',(event)=>{          //add event listener on hover to 
     instaToolTip.style.display = "block"; //shows the frame
     console.log(event);
     
 })
 
-toolTipClose.addEventListener('click',(event) => {
+toolTipClose.addEventListener('click',(event) => {    //add event listener to close button of tooltip
   instaToolTip.style.display = "none"; //hides the frame
 })
 
