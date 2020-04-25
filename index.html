@@ -78,8 +78,17 @@
   const instaPic =  document.querySelector('.insta'); //get a handle to instagram picture by class
   const toolTipClose = document.querySelector('#close_x_popup'); //get a handle to the tooltip close button by id
   const instaToolTip = document.querySelector('#tooltip1');  //get a handle to the tooltip by id
+  const facebookToolTip = document.querySelector('#wireframe');  //get a handle to the tooltip by id
   instaPic.addEventListener('mouseover',(event)=>{          //add event listener on hover to 
     instaToolTip.style.display = "block"; //shows the frame
+    instaToolTip.style.right = "300px";
+    console.log(event);
+    
+})
+
+facebookToolTip.addEventListener('mouseover',(event)=>{          //add event listener on hover to 
+    instaToolTip.style.display = "block"; //shows the frame
+    instaToolTip.style.right = "1000px";
     console.log(event);
     
 })
